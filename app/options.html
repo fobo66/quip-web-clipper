@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Quip Web Clipper Settings</title>
+    <style>
+      body: { padding: 10px; }
+      #id, #getToken: { float: left; margin: 10px; padding: 10px; }
+    </style>
+  </head>
+  <body>
+      <input type="text" id="token" placeholder="Access Token: ">
+    <div id="reminder" style="display: none">
+      <p id="reminderText">To use this extention, you should first go to the quip.com/api/personal-token, generate your token and paste here.</p>
+      <button id="getToken">Get Token</button>
+    </div>
+    <button id="save">Save</button>
+    <div id="status"></div>
+      <!-- build:js scripts/options-vendor.js -->
+      <!-- bower:js -->
+      <!-- endbower -->
+      <!-- endbuild -->
+    
+      <!-- build:js scripts/options.js -->
+      <script src="scripts/options.js"></script>
+      <!-- endbuild -->
+  </body>
+</html>

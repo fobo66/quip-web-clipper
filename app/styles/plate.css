@@ -1,0 +1,97 @@
+#quip_ext_master {
+    font-family: proxima-nova, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+    z-index: 2147483647;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#quip_ext_master.quip_ext_container_inactive .quip_ext_component_save {
+    transform: translate3d(0px, -130%, 0px);
+}
+
+#quip_ext_master .quip_ext_component_save {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    transform: translate3d(0px, 0px, 0px);
+    z-index: 2147483646;
+    overflow: visible;
+    padding: 0 3px 3px;
+    transition: all 0.2s ease-in-out;
+}
+
+#quip_ext_master .quip_ext_platter {
+    background-color: rgb(243, 243, 243);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-repeat: initial;
+    box-shadow: rgba(0, 0, 0, 0.498039) 0 2px 6px;
+    position: relative;
+    text-shadow: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+#quip_ext_master div {
+    display: block;
+}
+
+#quip_ext_master .quip_ext_toolbar_main {
+    line-height: 24px;
+    position: relative;
+    z-index: 2147483647;
+    padding: 0 0 5px;
+}
+
+#quip_ext_master .quip_ext_logo_action_copy {
+    color: rgb(49, 49, 49);
+    font-family: proxima-nova, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: block;
+    float: left;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    line-height: 20px;
+    padding-top: 2px;
+    min-width: 100px;
+    transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#quip_ext_master #quip_ext_save_recs {
+    max-width: 320px;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#quip_ext_master .quip_ext_platter::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+#quip_ext_master .quip_ext_toolbar_main::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+#quip_ext_master .quip_ext_platter a,
+#quip_ext_master .quip_ext_platter a:visited, 
+#quip_ext_master .quip_ext_platter a:active {
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-repeat: initial;
+    color: rgb(119, 119, 119);
+    cursor: pointer;
+    border-width: 0;
+    border-style: initial;
+    border-color: initial;
+    margin: 0;
+    text-decoration: none;
+}

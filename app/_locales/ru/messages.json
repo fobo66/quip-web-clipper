@@ -1,0 +1,30 @@
+{
+  "appName": {
+    "message": "Quip web clipper",
+    "description": "Название расширения"
+  },
+  "appDescription": {
+    "message": "Сохраняйте статьи в Quip!",
+    "description": "Описание расширения"
+  },
+
+  "optionsSaved": {
+    "message": "Настройки сохранены.",
+    "description": "Ваш код доступа был сохранён"
+  },
+
+  "accessTokenReminder": {
+    "message": "Чтобы использовать это расширение, вы должны сначала сгенерировать код доступа.",
+    "description": "Не забудьте сгенерировать код доступа!"
+  },
+
+  "getToken": {
+    "message": "Получить код доступа",
+    "description": "Нажмите, чтобы получить код доступа"
+  },
+
+  "save": {
+    "message": "Сохранить",
+    "description": "Сохранить настройки"
+  }
+}

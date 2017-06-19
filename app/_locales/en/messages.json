@@ -1,0 +1,30 @@
+{
+  "appName": {
+    "message": "Quip web clipper",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Clip articles into Quip with easy!",
+    "description": "The description of the application"
+  },
+
+  "optionsSaved": {
+    "message": "Options saved",
+    "description": "Your access token has been saved"
+  },
+
+  "accessTokenReminder": {
+    "message": "To use this extention, you should first go to the quip.com/api/personal-token, generate your token and paste here.",
+    "description": "Don't forget to set your access token!"
+  },
+
+  "getToken": {
+    "message": "Get Token",
+    "description": "Get your access token!"
+  },
+
+  "save": {
+    "message": "Save",
+    "description": "Save options"
+  }
+}
