@@ -30,19 +30,19 @@
   // XML only defines these and the numeric ones:
 
   var entityTable = {
-    "lt": "<",
-    "gt": ">",
-    "amp": "&",
-    "quot": '"',
-    "apos": "'",
+    'lt': '<',
+    'gt': '>',
+    'amp': '&',
+    'quot': '"',
+    'apos': '\'',
   };
 
   var reverseEntityTable = {
-    "<": "&lt;",
-    ">": "&gt;",
-    "&": "&amp;",
-    '"': "&quot;",
-    "'": "&apos;",
+    '<': '&lt;',
+    '>': '&gt;',
+    '&': '&amp;',
+    '"': '&quot;',
+    '\'': '&apos;',
   };
 
   function encodeTextContentHTML(s) {
@@ -68,215 +68,215 @@
 
   // When a style is set in JS, map it to the corresponding CSS attribute
   var styleMap = {
-    "alignmentBaseline": "alignment-baseline",
-    "background": "background",
-    "backgroundAttachment": "background-attachment",
-    "backgroundClip": "background-clip",
-    "backgroundColor": "background-color",
-    "backgroundImage": "background-image",
-    "backgroundOrigin": "background-origin",
-    "backgroundPosition": "background-position",
-    "backgroundPositionX": "background-position-x",
-    "backgroundPositionY": "background-position-y",
-    "backgroundRepeat": "background-repeat",
-    "backgroundRepeatX": "background-repeat-x",
-    "backgroundRepeatY": "background-repeat-y",
-    "backgroundSize": "background-size",
-    "baselineShift": "baseline-shift",
-    "border": "border",
-    "borderBottom": "border-bottom",
-    "borderBottomColor": "border-bottom-color",
-    "borderBottomLeftRadius": "border-bottom-left-radius",
-    "borderBottomRightRadius": "border-bottom-right-radius",
-    "borderBottomStyle": "border-bottom-style",
-    "borderBottomWidth": "border-bottom-width",
-    "borderCollapse": "border-collapse",
-    "borderColor": "border-color",
-    "borderImage": "border-image",
-    "borderImageOutset": "border-image-outset",
-    "borderImageRepeat": "border-image-repeat",
-    "borderImageSlice": "border-image-slice",
-    "borderImageSource": "border-image-source",
-    "borderImageWidth": "border-image-width",
-    "borderLeft": "border-left",
-    "borderLeftColor": "border-left-color",
-    "borderLeftStyle": "border-left-style",
-    "borderLeftWidth": "border-left-width",
-    "borderRadius": "border-radius",
-    "borderRight": "border-right",
-    "borderRightColor": "border-right-color",
-    "borderRightStyle": "border-right-style",
-    "borderRightWidth": "border-right-width",
-    "borderSpacing": "border-spacing",
-    "borderStyle": "border-style",
-    "borderTop": "border-top",
-    "borderTopColor": "border-top-color",
-    "borderTopLeftRadius": "border-top-left-radius",
-    "borderTopRightRadius": "border-top-right-radius",
-    "borderTopStyle": "border-top-style",
-    "borderTopWidth": "border-top-width",
-    "borderWidth": "border-width",
-    "bottom": "bottom",
-    "boxShadow": "box-shadow",
-    "boxSizing": "box-sizing",
-    "captionSide": "caption-side",
-    "clear": "clear",
-    "clip": "clip",
-    "clipPath": "clip-path",
-    "clipRule": "clip-rule",
-    "color": "color",
-    "colorInterpolation": "color-interpolation",
-    "colorInterpolationFilters": "color-interpolation-filters",
-    "colorProfile": "color-profile",
-    "colorRendering": "color-rendering",
-    "content": "content",
-    "counterIncrement": "counter-increment",
-    "counterReset": "counter-reset",
-    "cursor": "cursor",
-    "direction": "direction",
-    "display": "display",
-    "dominantBaseline": "dominant-baseline",
-    "emptyCells": "empty-cells",
-    "enableBackground": "enable-background",
-    "fill": "fill",
-    "fillOpacity": "fill-opacity",
-    "fillRule": "fill-rule",
-    "filter": "filter",
-    "cssFloat": "float",
-    "floodColor": "flood-color",
-    "floodOpacity": "flood-opacity",
-    "font": "font",
-    "fontFamily": "font-family",
-    "fontSize": "font-size",
-    "fontStretch": "font-stretch",
-    "fontStyle": "font-style",
-    "fontVariant": "font-variant",
-    "fontWeight": "font-weight",
-    "glyphOrientationHorizontal": "glyph-orientation-horizontal",
-    "glyphOrientationVertical": "glyph-orientation-vertical",
-    "height": "height",
-    "imageRendering": "image-rendering",
-    "kerning": "kerning",
-    "left": "left",
-    "letterSpacing": "letter-spacing",
-    "lightingColor": "lighting-color",
-    "lineHeight": "line-height",
-    "listStyle": "list-style",
-    "listStyleImage": "list-style-image",
-    "listStylePosition": "list-style-position",
-    "listStyleType": "list-style-type",
-    "margin": "margin",
-    "marginBottom": "margin-bottom",
-    "marginLeft": "margin-left",
-    "marginRight": "margin-right",
-    "marginTop": "margin-top",
-    "marker": "marker",
-    "markerEnd": "marker-end",
-    "markerMid": "marker-mid",
-    "markerStart": "marker-start",
-    "mask": "mask",
-    "maxHeight": "max-height",
-    "maxWidth": "max-width",
-    "minHeight": "min-height",
-    "minWidth": "min-width",
-    "opacity": "opacity",
-    "orphans": "orphans",
-    "outline": "outline",
-    "outlineColor": "outline-color",
-    "outlineOffset": "outline-offset",
-    "outlineStyle": "outline-style",
-    "outlineWidth": "outline-width",
-    "overflow": "overflow",
-    "overflowX": "overflow-x",
-    "overflowY": "overflow-y",
-    "padding": "padding",
-    "paddingBottom": "padding-bottom",
-    "paddingLeft": "padding-left",
-    "paddingRight": "padding-right",
-    "paddingTop": "padding-top",
-    "page": "page",
-    "pageBreakAfter": "page-break-after",
-    "pageBreakBefore": "page-break-before",
-    "pageBreakInside": "page-break-inside",
-    "pointerEvents": "pointer-events",
-    "position": "position",
-    "quotes": "quotes",
-    "resize": "resize",
-    "right": "right",
-    "shapeRendering": "shape-rendering",
-    "size": "size",
-    "speak": "speak",
-    "src": "src",
-    "stopColor": "stop-color",
-    "stopOpacity": "stop-opacity",
-    "stroke": "stroke",
-    "strokeDasharray": "stroke-dasharray",
-    "strokeDashoffset": "stroke-dashoffset",
-    "strokeLinecap": "stroke-linecap",
-    "strokeLinejoin": "stroke-linejoin",
-    "strokeMiterlimit": "stroke-miterlimit",
-    "strokeOpacity": "stroke-opacity",
-    "strokeWidth": "stroke-width",
-    "tableLayout": "table-layout",
-    "textAlign": "text-align",
-    "textAnchor": "text-anchor",
-    "textDecoration": "text-decoration",
-    "textIndent": "text-indent",
-    "textLineThrough": "text-line-through",
-    "textLineThroughColor": "text-line-through-color",
-    "textLineThroughMode": "text-line-through-mode",
-    "textLineThroughStyle": "text-line-through-style",
-    "textLineThroughWidth": "text-line-through-width",
-    "textOverflow": "text-overflow",
-    "textOverline": "text-overline",
-    "textOverlineColor": "text-overline-color",
-    "textOverlineMode": "text-overline-mode",
-    "textOverlineStyle": "text-overline-style",
-    "textOverlineWidth": "text-overline-width",
-    "textRendering": "text-rendering",
-    "textShadow": "text-shadow",
-    "textTransform": "text-transform",
-    "textUnderline": "text-underline",
-    "textUnderlineColor": "text-underline-color",
-    "textUnderlineMode": "text-underline-mode",
-    "textUnderlineStyle": "text-underline-style",
-    "textUnderlineWidth": "text-underline-width",
-    "top": "top",
-    "unicodeBidi": "unicode-bidi",
-    "unicodeRange": "unicode-range",
-    "vectorEffect": "vector-effect",
-    "verticalAlign": "vertical-align",
-    "visibility": "visibility",
-    "whiteSpace": "white-space",
-    "widows": "widows",
-    "width": "width",
-    "wordBreak": "word-break",
-    "wordSpacing": "word-spacing",
-    "wordWrap": "word-wrap",
-    "writingMode": "writing-mode",
-    "zIndex": "z-index",
-    "zoom": "zoom",
+    'alignmentBaseline': 'alignment-baseline',
+    'background': 'background',
+    'backgroundAttachment': 'background-attachment',
+    'backgroundClip': 'background-clip',
+    'backgroundColor': 'background-color',
+    'backgroundImage': 'background-image',
+    'backgroundOrigin': 'background-origin',
+    'backgroundPosition': 'background-position',
+    'backgroundPositionX': 'background-position-x',
+    'backgroundPositionY': 'background-position-y',
+    'backgroundRepeat': 'background-repeat',
+    'backgroundRepeatX': 'background-repeat-x',
+    'backgroundRepeatY': 'background-repeat-y',
+    'backgroundSize': 'background-size',
+    'baselineShift': 'baseline-shift',
+    'border': 'border',
+    'borderBottom': 'border-bottom',
+    'borderBottomColor': 'border-bottom-color',
+    'borderBottomLeftRadius': 'border-bottom-left-radius',
+    'borderBottomRightRadius': 'border-bottom-right-radius',
+    'borderBottomStyle': 'border-bottom-style',
+    'borderBottomWidth': 'border-bottom-width',
+    'borderCollapse': 'border-collapse',
+    'borderColor': 'border-color',
+    'borderImage': 'border-image',
+    'borderImageOutset': 'border-image-outset',
+    'borderImageRepeat': 'border-image-repeat',
+    'borderImageSlice': 'border-image-slice',
+    'borderImageSource': 'border-image-source',
+    'borderImageWidth': 'border-image-width',
+    'borderLeft': 'border-left',
+    'borderLeftColor': 'border-left-color',
+    'borderLeftStyle': 'border-left-style',
+    'borderLeftWidth': 'border-left-width',
+    'borderRadius': 'border-radius',
+    'borderRight': 'border-right',
+    'borderRightColor': 'border-right-color',
+    'borderRightStyle': 'border-right-style',
+    'borderRightWidth': 'border-right-width',
+    'borderSpacing': 'border-spacing',
+    'borderStyle': 'border-style',
+    'borderTop': 'border-top',
+    'borderTopColor': 'border-top-color',
+    'borderTopLeftRadius': 'border-top-left-radius',
+    'borderTopRightRadius': 'border-top-right-radius',
+    'borderTopStyle': 'border-top-style',
+    'borderTopWidth': 'border-top-width',
+    'borderWidth': 'border-width',
+    'bottom': 'bottom',
+    'boxShadow': 'box-shadow',
+    'boxSizing': 'box-sizing',
+    'captionSide': 'caption-side',
+    'clear': 'clear',
+    'clip': 'clip',
+    'clipPath': 'clip-path',
+    'clipRule': 'clip-rule',
+    'color': 'color',
+    'colorInterpolation': 'color-interpolation',
+    'colorInterpolationFilters': 'color-interpolation-filters',
+    'colorProfile': 'color-profile',
+    'colorRendering': 'color-rendering',
+    'content': 'content',
+    'counterIncrement': 'counter-increment',
+    'counterReset': 'counter-reset',
+    'cursor': 'cursor',
+    'direction': 'direction',
+    'display': 'display',
+    'dominantBaseline': 'dominant-baseline',
+    'emptyCells': 'empty-cells',
+    'enableBackground': 'enable-background',
+    'fill': 'fill',
+    'fillOpacity': 'fill-opacity',
+    'fillRule': 'fill-rule',
+    'filter': 'filter',
+    'cssFloat': 'float',
+    'floodColor': 'flood-color',
+    'floodOpacity': 'flood-opacity',
+    'font': 'font',
+    'fontFamily': 'font-family',
+    'fontSize': 'font-size',
+    'fontStretch': 'font-stretch',
+    'fontStyle': 'font-style',
+    'fontVariant': 'font-variant',
+    'fontWeight': 'font-weight',
+    'glyphOrientationHorizontal': 'glyph-orientation-horizontal',
+    'glyphOrientationVertical': 'glyph-orientation-vertical',
+    'height': 'height',
+    'imageRendering': 'image-rendering',
+    'kerning': 'kerning',
+    'left': 'left',
+    'letterSpacing': 'letter-spacing',
+    'lightingColor': 'lighting-color',
+    'lineHeight': 'line-height',
+    'listStyle': 'list-style',
+    'listStyleImage': 'list-style-image',
+    'listStylePosition': 'list-style-position',
+    'listStyleType': 'list-style-type',
+    'margin': 'margin',
+    'marginBottom': 'margin-bottom',
+    'marginLeft': 'margin-left',
+    'marginRight': 'margin-right',
+    'marginTop': 'margin-top',
+    'marker': 'marker',
+    'markerEnd': 'marker-end',
+    'markerMid': 'marker-mid',
+    'markerStart': 'marker-start',
+    'mask': 'mask',
+    'maxHeight': 'max-height',
+    'maxWidth': 'max-width',
+    'minHeight': 'min-height',
+    'minWidth': 'min-width',
+    'opacity': 'opacity',
+    'orphans': 'orphans',
+    'outline': 'outline',
+    'outlineColor': 'outline-color',
+    'outlineOffset': 'outline-offset',
+    'outlineStyle': 'outline-style',
+    'outlineWidth': 'outline-width',
+    'overflow': 'overflow',
+    'overflowX': 'overflow-x',
+    'overflowY': 'overflow-y',
+    'padding': 'padding',
+    'paddingBottom': 'padding-bottom',
+    'paddingLeft': 'padding-left',
+    'paddingRight': 'padding-right',
+    'paddingTop': 'padding-top',
+    'page': 'page',
+    'pageBreakAfter': 'page-break-after',
+    'pageBreakBefore': 'page-break-before',
+    'pageBreakInside': 'page-break-inside',
+    'pointerEvents': 'pointer-events',
+    'position': 'position',
+    'quotes': 'quotes',
+    'resize': 'resize',
+    'right': 'right',
+    'shapeRendering': 'shape-rendering',
+    'size': 'size',
+    'speak': 'speak',
+    'src': 'src',
+    'stopColor': 'stop-color',
+    'stopOpacity': 'stop-opacity',
+    'stroke': 'stroke',
+    'strokeDasharray': 'stroke-dasharray',
+    'strokeDashoffset': 'stroke-dashoffset',
+    'strokeLinecap': 'stroke-linecap',
+    'strokeLinejoin': 'stroke-linejoin',
+    'strokeMiterlimit': 'stroke-miterlimit',
+    'strokeOpacity': 'stroke-opacity',
+    'strokeWidth': 'stroke-width',
+    'tableLayout': 'table-layout',
+    'textAlign': 'text-align',
+    'textAnchor': 'text-anchor',
+    'textDecoration': 'text-decoration',
+    'textIndent': 'text-indent',
+    'textLineThrough': 'text-line-through',
+    'textLineThroughColor': 'text-line-through-color',
+    'textLineThroughMode': 'text-line-through-mode',
+    'textLineThroughStyle': 'text-line-through-style',
+    'textLineThroughWidth': 'text-line-through-width',
+    'textOverflow': 'text-overflow',
+    'textOverline': 'text-overline',
+    'textOverlineColor': 'text-overline-color',
+    'textOverlineMode': 'text-overline-mode',
+    'textOverlineStyle': 'text-overline-style',
+    'textOverlineWidth': 'text-overline-width',
+    'textRendering': 'text-rendering',
+    'textShadow': 'text-shadow',
+    'textTransform': 'text-transform',
+    'textUnderline': 'text-underline',
+    'textUnderlineColor': 'text-underline-color',
+    'textUnderlineMode': 'text-underline-mode',
+    'textUnderlineStyle': 'text-underline-style',
+    'textUnderlineWidth': 'text-underline-width',
+    'top': 'top',
+    'unicodeBidi': 'unicode-bidi',
+    'unicodeRange': 'unicode-range',
+    'vectorEffect': 'vector-effect',
+    'verticalAlign': 'vertical-align',
+    'visibility': 'visibility',
+    'whiteSpace': 'white-space',
+    'widows': 'widows',
+    'width': 'width',
+    'wordBreak': 'word-break',
+    'wordSpacing': 'word-spacing',
+    'wordWrap': 'word-wrap',
+    'writingMode': 'writing-mode',
+    'zIndex': 'z-index',
+    'zoom': 'zoom',
   };
 
   // Elements that can be self-closing
   var voidElems = {
-    "area": true,
-    "base": true,
-    "br": true,
-    "col": true,
-    "command": true,
-    "embed": true,
-    "hr": true,
-    "img": true,
-    "input": true,
-    "link": true,
-    "meta": true,
-    "param": true,
-    "source": true,
-    "wbr": true
+    'area': true,
+    'base': true,
+    'br': true,
+    'col': true,
+    'command': true,
+    'embed': true,
+    'hr': true,
+    'img': true,
+    'input': true,
+    'link': true,
+    'meta': true,
+    'param': true,
+    'source': true,
+    'wbr': true
   };
 
-  var whitespace = [" ", "\t", "\n", "\r"];
+  var whitespace = [' ', '\t', '\n', '\r'];
 
   // See http://www.w3schools.com/dom/dom_nodetype.asp
   var nodeTypes = {
@@ -297,7 +297,7 @@
   function getElementsByTagName(tag) {
     tag = tag.toUpperCase();
     var elems = [];
-    var allTags = (tag === "*");
+    var allTags = (tag === '*');
     function getElems(node) {
       var length = node.children.length;
       for (var i = 0; i < length; i++) {
@@ -362,7 +362,7 @@
       var childNodes = this.childNodes;
       var childIndex = childNodes.indexOf(child);
       if (childIndex === -1) {
-        throw "removeChild: node not found";
+        throw 'removeChild: node not found';
       } else {
         child.parentNode = null;
         var prev = child.previousSibling;
@@ -393,7 +393,7 @@
       var childNodes = this.childNodes;
       var childIndex = childNodes.indexOf(oldNode);
       if (childIndex === -1) {
-        throw "replaceChild: node not found";
+        throw 'replaceChild: node not found';
       } else {
         // This will take care of updating the new node if it was somewhere else before:
         if (newNode.parentNode)
@@ -503,8 +503,8 @@
       this._decodedValue = newValue;
     },
     getDecodedValue: function() {
-      if (typeof this._decodedValue === "undefined") {
-        this._decodedValue = (this._value && decodeHTML(this._value)) || "";
+      if (typeof this._decodedValue === 'undefined') {
+        this._decodedValue = (this._value && decodeHTML(this._value)) || '';
       }
       return this._decodedValue;
     },
@@ -517,7 +517,7 @@
   Comment.prototype = {
     __proto__: Node.prototype,
 
-    nodeName: "#comment",
+    nodeName: '#comment',
     nodeType: Node.COMMENT_NODE
   };
 
@@ -528,17 +528,17 @@
   Text.prototype = {
     __proto__: Node.prototype,
 
-    nodeName: "#text",
+    nodeName: '#text',
     nodeType: Node.TEXT_NODE,
     get textContent() {
-      if (typeof this._textContent === "undefined") {
-        this._textContent = decodeHTML(this._innerHTML || "");
+      if (typeof this._textContent === 'undefined') {
+        this._textContent = decodeHTML(this._innerHTML || '');
       }
       return this._textContent;
     },
     get innerHTML() {
-      if (typeof this._innerHTML === "undefined") {
-        this._innerHTML = encodeTextContentHTML(this._textContent || "");
+      if (typeof this._innerHTML === 'undefined') {
+        this._innerHTML = encodeTextContentHTML(this._textContent || '');
       }
       return this._innerHTML;
     },
@@ -562,9 +562,9 @@
   Document.prototype = {
     __proto__: Node.prototype,
 
-    nodeName: "#document",
+    nodeName: '#document',
     nodeType: Node.DOCUMENT_NODE,
-    title: "",
+    title: '',
 
     getElementsByTagName: getElementsByTagName,
 
@@ -613,35 +613,35 @@
     getElementsByTagName: getElementsByTagName,
 
     get className() {
-      return this.getAttribute("class") || "";
+      return this.getAttribute('class') || '';
     },
 
     set className(str) {
-      this.setAttribute("class", str);
+      this.setAttribute('class', str);
     },
 
     get id() {
-      return this.getAttribute("id") || "";
+      return this.getAttribute('id') || '';
     },
 
     set id(str) {
-      this.setAttribute("id", str);
+      this.setAttribute('id', str);
     },
 
     get href() {
-      return this.getAttribute("href") || "";
+      return this.getAttribute('href') || '';
     },
 
     set href(str) {
-      this.setAttribute("href", str);
+      this.setAttribute('href', str);
     },
 
     get src() {
-      return this.getAttribute("src") || "";
+      return this.getAttribute('src') || '';
     },
 
     set src(str) {
-      this.setAttribute("src", str);
+      this.setAttribute('src', str);
     },
 
     get nodeName() {
@@ -654,25 +654,25 @@
         for (i = 0; i < node.childNodes.length; i++) {
           var child = node.childNodes[i];
           if (child.localName) {
-            arr.push("<" + child.localName);
+            arr.push('<' + child.localName);
 
             // serialize attribute list
             for (var j = 0; j < child.attributes.length; j++) {
               var attr = child.attributes[j];
               // the attribute value will be HTML escaped.
               var val = attr.value;
-              var quote = (val.indexOf('"') === -1 ? '"' : "'");
-              arr.push(" " + attr.name + '=' + quote + val + quote);
+              var quote = (val.indexOf('"') === -1 ? '"' : '\'');
+              arr.push(' ' + attr.name + '=' + quote + val + quote);
             }
 
             if (child.localName in voidElems && !child.childNodes.length) {
               // if this is a self-closing element, end it here
-              arr.push("/>");
+              arr.push('/>');
             } else {
               // otherwise, add its children
-              arr.push(">");
+              arr.push('>');
               getHTML(child);
-              arr.push("</" + child.localName + ">");
+              arr.push('</' + child.localName + '>');
             }
           } else {
             // This is a text node, so asking for innerHTML won't recurse.
@@ -685,7 +685,7 @@
       // See http://blog.cdleary.com/2012/01/string-representation-in-spidermonkey/#ropes
       var arr = [];
       getHTML(this);
-      return arr.join("");
+      return arr.join('');
     },
 
     set innerHTML(html) {
@@ -732,7 +732,7 @@
       // See http://blog.cdleary.com/2012/01/string-representation-in-spidermonkey/#ropes
       var text = [];
       getText(this);
-      return text.join("");
+      return text.join('');
     },
 
     getAttribute: function (name) {
@@ -777,13 +777,13 @@
   // manipulations, so this should be okay.
   Style.prototype = {
     getStyle: function (styleName) {
-      var attr = this.node.getAttribute("style");
+      var attr = this.node.getAttribute('style');
       if (!attr)
         return undefined;
 
-      var styles = attr.split(";");
+      var styles = attr.split(';');
       for (var i = 0; i < styles.length; i++) {
-        var style = styles[i].split(":");
+        var style = styles[i].split(':');
         var name = style[0].trim();
         if (name === styleName)
           return style[1].trim();
@@ -793,21 +793,21 @@
     },
 
     setStyle: function (styleName, styleValue) {
-      var value = this.node.getAttribute("style") || "";
+      var value = this.node.getAttribute('style') || '';
       var index = 0;
       do {
-        var next = value.indexOf(";", index) + 1;
+        var next = value.indexOf(';', index) + 1;
         var length = next - index - 1;
         var style = (length > 0 ? value.substr(index, length) : value.substr(index));
-        if (style.substr(0, style.indexOf(":")).trim() === styleName) {
-          value = value.substr(0, index).trim() + (next ? " " + value.substr(next).trim() : "");
+        if (style.substr(0, style.indexOf(':')).trim() === styleName) {
+          value = value.substr(0, index).trim() + (next ? ' ' + value.substr(next).trim() : '');
           break;
         }
         index = next;
       } while (index);
 
-      value += " " + styleName + ": " + styleValue + ";";
-      this.node.setAttribute("style", value.trim());
+      value += ' ' + styleName + ': ' + styleValue + ';';
+      this.node.setAttribute('style', value.trim());
     }
   };
 
@@ -840,13 +840,13 @@
     // every time.
     this.retPair = [];
 
-    this.errorState = "";
+    this.errorState = '';
   };
 
   JSDOMParser.prototype = {
     error: function(m) {
-      dump("JSDOMParser error: " + m + "\n");
-      this.errorState += m + "\n";
+      dump('JSDOMParser error: ' + m + '\n');
+      this.errorState += m + '\n';
     },
 
     /**
@@ -886,9 +886,9 @@
      * pair and adds the result to the attributes list.
      */
     readAttribute: function (node) {
-      var name = "";
+      var name = '';
 
-      var n = this.html.indexOf("=", this.currentChar);
+      var n = this.html.indexOf('=', this.currentChar);
       if (n === -1) {
         this.currentChar = this.html.length;
       } else {
@@ -902,8 +902,8 @@
 
       // After a '=', we should see a '"' for the attribute value
       var c = this.nextChar();
-      if (c !== '"' && c !== "'") {
-        this.error("Error reading attribute " + name + ", expecting '\"'");
+      if (c !== '"' && c !== '\'') {
+        this.error('Error reading attribute ' + name + ', expecting \'"\'');
         return;
       }
 
@@ -929,7 +929,7 @@
       // Read the Element tag name
       var strBuf = this.strBuf;
       strBuf.length = 0;
-      while (whitespace.indexOf(c) == -1 && c !== ">" && c !== "/") {
+      while (whitespace.indexOf(c) == -1 && c !== '>' && c !== '/') {
         if (c === undefined)
           return false;
         strBuf.push(c);
@@ -943,13 +943,13 @@
       var node = new Element(tag);
 
       // Read Element attributes
-      while (c !== "/" && c !== ">") {
+      while (c !== '/' && c !== '>') {
         if (c === undefined)
           return false;
         while (whitespace.indexOf(this.html[this.currentChar++]) != -1);
         this.currentChar--;
         c = this.nextChar();
-        if (c !== "/" && c !== ">") {
+        if (c !== '/' && c !== '>') {
           --this.currentChar;
           this.readAttribute(node);
         }
@@ -957,11 +957,11 @@
 
       // If this is a self-closing tag, read '/>'
       var closed = false;
-      if (c === "/") {
+      if (c === '/') {
         closed = true;
         c = this.nextChar();
-        if (c !== ">") {
-          this.error("expected '>' to close " + tag);
+        if (c !== '>') {
+          this.error('expected \'>\' to close ' + tag);
           return false;
         }
       }
@@ -1011,14 +1011,14 @@
     },
 
     discardNextComment: function() {
-      if (this.match("--")) {
-        this.discardTo("-->");
+      if (this.match('--')) {
+        this.discardTo('-->');
       } else {
         var c = this.nextChar();
-        while (c !== ">") {
+        while (c !== '>') {
           if (c === undefined)
             return null;
-          if (c === '"' || c === "'")
+          if (c === '"' || c === '\'')
             this.readString(c);
           c = this.nextChar();
         }
@@ -1040,10 +1040,10 @@
         return null;
 
       // Read any text as Text node
-      if (c !== "<") {
+      if (c !== '<') {
         --this.currentChar;
         var textNode = new Text();
-        var n = this.html.indexOf("<", this.currentChar);
+        var n = this.html.indexOf('<', this.currentChar);
         if (n === -1) {
           textNode.innerHTML = this.html.substring(this.currentChar, this.html.length);
           this.currentChar = this.html.length;
@@ -1060,7 +1060,7 @@
       // textContent, but we don't really care about Comment nodes (we throw
       // them away in readChildren()). So just returning an empty Comment node
       // here is sufficient.
-      if (c === "!" || c === "?") {
+      if (c === '!' || c === '?') {
         // We're still before the ! or ? that is starting this comment:
         this.currentChar++;
         return this.discardNextComment();
@@ -1068,7 +1068,7 @@
 
       // If we're reading a closing tag, return null. This means we've reached
       // the end of this set of child nodes.
-      if (c === "/") {
+      if (c === '/') {
         --this.currentChar;
         return null;
       }
@@ -1085,9 +1085,9 @@
       // If this isn't a void Element, read its child nodes
       if (!closed) {
         this.readChildren(node);
-        var closingTag = "</" + localName + ">";
+        var closingTag = '</' + localName + '>';
         if (!this.match(closingTag)) {
-          this.error("expected '" + closingTag + "' and got " + this.html.substr(this.currentChar, closingTag.length));
+          this.error('expected \'' + closingTag + '\' and got ' + this.html.substr(this.currentChar, closingTag.length));
           return null;
         }
       }
@@ -1095,13 +1095,13 @@
       // Only use the first title, because SVG might have other
       // title elements which we don't care about (medium.com
       // does this, at least).
-      if (localName === "title" && !this.doc.title) {
+      if (localName === 'title' && !this.doc.title) {
         this.doc.title = node.textContent.trim();
-      } else if (localName === "head") {
+      } else if (localName === 'head') {
         this.doc.head = node;
-      } else if (localName === "body") {
+      } else if (localName === 'body') {
         this.doc.body = node;
-      } else if (localName === "html") {
+      } else if (localName === 'html') {
         this.doc.documentElement = node;
       }
 
